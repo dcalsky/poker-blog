@@ -19,6 +19,12 @@ var config = {
         },{
             test: /\.css$/,
             loader: "css!style"
+        },{
+            test: /\.less$/,
+            loader: 'style!css!less'
+        },{
+            test: /\.(png|jpg)$/,
+            loader: 'url?limit=25000'
         }]
 
     },

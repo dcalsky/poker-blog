@@ -2,8 +2,9 @@ import ReactDOM from 'react-dom';
 import React from "react";
 import Postpage from "./postpage.jsx";
 
+const element = module.hot ? document.body : document.getElementById("postpage");
 const rootInstance = ReactDOM.render(
-    <Postpage />, document.body
+    <Postpage />, element
 );
 
 if (module.hot) {
