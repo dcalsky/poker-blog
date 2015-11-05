@@ -3,8 +3,8 @@ var path = require("path");
 var config = {
     entry: {
         app: ['webpack/hot/dev-server'],
-        homepage: "./app/homepage/index.js",
-        postpage: "./app/postpage/index.js",
+        homepage: "./app/pages/homepage/index.js",
+        postpage: "./app/pages/postpage/index.js",
         //vendors: ["react"]
     },
     output: {
