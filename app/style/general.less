@@ -4,4 +4,39 @@
   background: #eaeaea;
   height: 100%;
   padding: 30px;
+  .articles {
+    list-style: none;
+    padding: 0;
+    .article {
+      position: relative;
+      border: 1px solid #ddd;
+      height: auto;
+      background: #fff;
+      margin-bottom: 60px;
+      padding: 20px;
+      .title {
+        font-size: 2em;
+        font-weight: 500;
+        border-left: 10px solid #eaeaea;
+        padding-left: 20px;
+        -webkit-transition: color .2s;
+        transition: color .2s;
+        cursor: pointer;
+        &:hover {
+          color: #1967d2;
+        }
+      }
+      .desc {
+        font-size: 1em;
+        font-weight: 300;
+        color: #b2b2b2;
+        margin: 20px 0;
+      }
+      .date {
+        color: #9a9a9a;
+        font-size: 1.2em;
+        font-weight: 400;
+      }
+    }
+  }
 }

@@ -18,11 +18,11 @@ const LeftNav = React.createClass({
                         <li className="hyperlink">Home Page</li>
                         <li className="hyperlink">About Me</li>
                     </ul>
+                    <div className="copyright">
+                        <p >© Copyright 2015 周左左 All rights reserved</p>
+                    </div>
+                </div>
 
-                </div>
-                <div className="copyright">
-                    <p >© Copyright 2015 左爷 All rights reserved</p>
-                </div>
             </div>
         );
     }
