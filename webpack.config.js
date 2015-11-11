@@ -5,6 +5,7 @@ var config = {
         app: ['webpack/hot/dev-server'],
         homepage: "./app/pages/homepage/index.js",
         postpage: "./app/pages/postpage/index.js",
+        publish: "./app/pages/publish/index.js",
         //vendors: ["react"]
     },
     output: {

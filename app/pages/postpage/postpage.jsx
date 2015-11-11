@@ -1,8 +1,13 @@
 import React from "react";
 const Post  = React.createClass({
+    componentWillMount(){
+
+    },
     render(){
         return(
-            <div>Post</div>
+            <div className="postpage">
+                This is postpage!
+            </div>
         )
     }
 });

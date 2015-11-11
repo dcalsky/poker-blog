@@ -6,4 +6,5 @@ test/temp
 .sass-cache
 app/vendor
 .tmp
+.idea
 test/scripts/

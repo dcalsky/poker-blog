@@ -13,9 +13,12 @@
   "author": "dcalsky",
   "license": "MIT",
   "dependencies": {
+    "cookie-cutter": "^0.1.1",
+    "node-fetch": "^1.3.3",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-markdown": "^1.0.5",
+    "superagent": "^1.4.0",
     "webpack": "^1.12.2"
   },
   "devDependencies": {

@@ -1,11 +1,14 @@
 import React from "react";
 import LeftNav from "../../components/left-nav.jsx";
 import General from "../../components/general.jsx";
+import Cloud from "../../cloud/index.js";
 import "../../style/main.less";
 
 const Home  = React.createClass({
     getInitialState(){
         return{
+            articles: []
+            /*
             articles: [
                 {
                     title: "从表演系转到软件工程",
@@ -24,7 +27,16 @@ const Home  = React.createClass({
                     desc: "First article",
                     time: "2015/10/03",
                 }]
+               */
         };
+    },
+    componentWillMount(){
+
+        Cloud.getGeneral((res)=>{
+            this.setState({
+                articles: res.articles
+            });
+        })
     },
     render(){
         return(
