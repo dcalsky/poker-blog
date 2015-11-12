@@ -1,4 +1,6 @@
 import React from "react";
+import Cloud from "../cloud/index.js";
+import cookie from "cookie-cutter";
 import "../style/login.less";
 
 const Login = React.createClass({
@@ -11,9 +13,17 @@ const Login = React.createClass({
         }
     },
     handleSubmit(e){
+        let username = this.state.username, password = this.state.password;
         e.preventDefault();
-        if(this.validate(this.state.username, "username") && this.validate(this.state.password, "password")){
-            console.log("login");
+        if(this.validate(username, "username") && this.validate(password, "password")){
+            Cloud.login(username, password, (res)=>{
+                console.log(res);
+                 if(res.status == "ok"){
+                     console.log("login");
+                     cookie.set("username", res.username);
+                 }
+            });
+
         }else{
             alert("账号密码格式出错啦=。=");
         }
