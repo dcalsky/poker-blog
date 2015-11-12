@@ -16,14 +16,25 @@ const Login = React.createClass({
         let username = this.state.username, password = this.state.password;
         e.preventDefault();
         if(this.validate(username, "username") && this.validate(password, "password")){
-            Cloud.login(username, password, (res)=>{
-                console.log(res);
-                 if(res.status == "ok"){
-                     console.log("login");
-                     cookie.set("username", res.username);
-                 }
-            });
-
+            if(this.state.login == true){
+                Cloud.login(username, password, (res)=>{
+                    console.log(res);
+                    if(res.status == "ok"){
+                        console.log("login");
+                        cookie.set("username", res.username);
+                        this.props.closeLoginBox(res.username);
+                    }
+                });
+            }else{
+                Cloud.register(username, password, (res)=>{
+                    console.log(res);
+                    if(res.status == "ok"){
+                        console.log("register");
+                        cookie.set("username", res.username);
+                        this.props.closeLoginBox(res.username);
+                    }
+                });
+            }
         }else{
             alert("账号密码格式出错啦=。=");
         }
@@ -57,7 +68,7 @@ const Login = React.createClass({
         return(
             <div className="login" >
                 <form className="form" onSubmit={this.handleSubmit}>
-                    <div className="close" onClick={this.props.closeLoginBox}><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg" alt=""/></div>
+                    <div className="close" onClick={()=>{this.props.closeLoginBox(null)}}><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg" alt=""/></div>
                     <div className="title">
                         {this.state.login ? "Login" : "Register" }
                     </div>

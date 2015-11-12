@@ -1,6 +1,6 @@
-import request from "superagent"
+import request from "superagent";
 
-const URL = "http://localhost:5000"
+const URL = "http://pokerblog.avosapps.com";
 const Cloud = {
     login(username, password, callback){
         fetch(URL + "/user/login", {
@@ -58,12 +58,7 @@ const Cloud = {
             .then((res)=>{
                 return res.json()
             }).then((json)=>{
-                if(json.status == "ok"){
-                    callback(json);
-                }else{
-                    alert("人品不好,加载失败~！");
-                    callback({});
-                }
+                callback(json);
             }).catch((err)=>{
                 alert("人品不好,加载失败~！");
                 callback({});

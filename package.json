@@ -28,6 +28,7 @@
     "babel-preset-react": "^6.0.15",
     "classname": "0.0.0",
     "css-loader": "^0.21.0",
+    "fetch": "^0.3.6",
     "file-loader": "^0.8.4",
     "less": "^2.5.3",
     "less-loader": "^2.2.1",

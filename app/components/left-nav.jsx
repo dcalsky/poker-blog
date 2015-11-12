@@ -7,25 +7,32 @@ import avatar from "../images/avatar.jpg";
 const LeftNav = React.createClass({
     getInitialState(){
         return{
-            isLogin: false,
+            username: null,
             loginBoxShow: false
         };
     },
     componentWillMount(){
         this.setState({
-            isLogin: cookie.get("username") && cookie.get("token")
+            username: cookie.get("username")
         });
     },
     login(){
-        if(this.state.isLogin){
-            return 0;
+        if(this.state.username){
+            this.logout();
         }else{
             this.setState({loginBoxShow: true});
         }
     },
-    closeLoginBox(){
+    logout(){
+        cookie.set("username", null);
         this.setState({
-            loginBoxShow: false
+            username: null
+        });
+    },
+    closeLoginBox(username){
+        this.setState({
+            loginBoxShow: false,
+            username: username
         });
     },
     render(){
@@ -38,7 +45,7 @@ const LeftNav = React.createClass({
                     <div className="title">Poker Blog</div>
                     <p className="desc">---."左左不是Mr.Right~!</p>
                     <ul>
-                        <li className="hyperlink" onClick={this.login}>{this.state.isLogin ? this.state.username : "Login"}</li>
+                        <li className="hyperlink" onClick={this.login}>{this.state.username ?  "Your're " + this.state.username : "Login"}</li>
                         <li className="hyperlink">Home Page</li>
                         <li className="hyperlink">About Me</li>
                     </ul>
