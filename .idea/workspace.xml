@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73d0e45-6e5c-4073-83a5-8542e0a26e6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cloud/index.js" afterPath="$PROJECT_DIR$/app/cloud/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login.jsx" afterPath="$PROJECT_DIR$/app/components/login.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/style/main.less" afterPath="$PROJECT_DIR$/app/style/main.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="poker.iws" />
@@ -479,7 +475,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447258269065</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update cloud">
+      <created>1447304487951</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1447304487951</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -531,7 +533,8 @@
     <MESSAGE value="postpage general" />
     <MESSAGE value="dir update" />
     <MESSAGE value="cloud" />
-    <option name="LAST_COMMIT_MESSAGE" value="cloud" />
+    <MESSAGE value="update cloud" />
+    <option name="LAST_COMMIT_MESSAGE" value="update cloud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
