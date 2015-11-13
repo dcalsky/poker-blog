@@ -7,7 +7,8 @@ import "../../style/main.less";
 const Home  = React.createClass({
     getInitialState(){
         return{
-            articles: []
+            articles: [],
+            loadCompleted: false
             /*
             articles: [
                 {
@@ -34,7 +35,8 @@ const Home  = React.createClass({
 
         Cloud.getGeneral((res)=>{
             this.setState({
-                articles: res.articles
+                articles: res.articles,
+                loadCompleted: true
             });
         })
     },
@@ -42,7 +44,15 @@ const Home  = React.createClass({
         return(
             <div className="homepage">
                 <LeftNav />
-                <General articles={this.state.articles} />
+                {
+                    this.state.loadCompleted?
+                        <General articles={this.state.articles} />
+                        :
+                        <div className="loader">
+                            Loading ...
+                        </div>
+                }
+
             </div>
         );
     }

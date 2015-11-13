@@ -49,7 +49,7 @@ const Login = React.createClass({
     validate(val, name){
         switch(name){
             case "username":
-                if(/\w{3,12}/.test(val)){
+                if(/\w{4,12}/.test(val)){
                     return true;
                 }else{
                     return false;

@@ -1,5 +1,4 @@
 import React from "react";
-import Markdown from "react-markdown";
 
 const Publish  = React.createClass({
     getInitialState(){
@@ -37,8 +36,6 @@ const Publish  = React.createClass({
                         <textarea onChange={this.handleInputChange.bind(this, "text")}></textarea>
                     </div>
                     <div className="md">
-                        <Markdown
-                            source={this.state.text} />
                     </div>
                     <button className="submit" >
                         提交

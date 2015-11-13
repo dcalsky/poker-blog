@@ -104,7 +104,7 @@ const Cloud = {
             callback({});
         })
     },
-    comment(article_id, content, username, callback){
+    comment(article_id, username, content, callback){
         fetch(URL + "/article/comment", {
             method: "post",
             headers: {
@@ -121,8 +121,8 @@ const Cloud = {
         }).then((json)=>{
             callback(json);
         }).catch((err)=>{
-            alert("评论失败, 兄台看看网线插好了没?");
-            callback({});
+            console.log(err);
+            alert("评论失败, 兄台看看网线插上了没?");
         })
     },
 

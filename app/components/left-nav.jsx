@@ -24,7 +24,7 @@ const LeftNav = React.createClass({
         }
     },
     logout(){
-        cookie.set("username", null);
+        cookie.set("username", "");
         this.setState({
             username: null
         });
@@ -46,7 +46,7 @@ const LeftNav = React.createClass({
                     <p className="desc">---."左左不是Mr.Right~!</p>
                     <ul>
                         <li className="hyperlink" onClick={this.login}>{this.state.username ?  "Your're " + this.state.username : "Login"}</li>
-                        <li className="hyperlink">Home Page</li>
+                        <li className="hyperlink" onClick={()=>{location.href = "../homepage"}} >Home Page</li>
                         <li className="hyperlink">About Me</li>
                     </ul>
                     <div className="copyright">
