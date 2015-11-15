@@ -1,10 +1,11 @@
-import request from "superagent";
 
-const URL = "http://pokerblog.avosapps.com";
+import config from "../config.json";
+
+const URL = config.back_end_host;
 const Cloud = {
     login(username, password, callback){
         fetch(URL + "/user/login", {
-            method: "post",
+            method: "POST",
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -16,6 +17,7 @@ const Cloud = {
         }).then((res)=>{
                 return res.json()
             }).then((json)=>{
+                this.username = json.username;
                 callback(json);
             }).catch((err)=>{
                 alert("你登陆失败了,别问我为什么!!!");
@@ -36,6 +38,7 @@ const Cloud = {
         }).then((res)=>{
             return res.json()
         }).then((json)=>{
+            this.username = json.username;
             callback(json);
         }).catch((err)=>{
             alert("你注册失败了,别问我为什么!!!");
@@ -49,8 +52,7 @@ const Cloud = {
             }).then((json)=>{
                 callback(json);
             }).catch((err)=>{
-                alert("人品不好,加载失败~！");
-                callback({});
+                console.log(err);
             })
     },
     getArticle(article_id, callback){
@@ -60,13 +62,12 @@ const Cloud = {
             }).then((json)=>{
                 callback(json);
             }).catch((err)=>{
-                alert("人品不好,加载失败~！");
-                callback({});
+                console.log(err);
             })
     },
     publish(title, desc, content, callback){
         fetch(URL + "/article/publish", {
-            method: "post",
+            method: "POST",
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -87,7 +88,7 @@ const Cloud = {
     },
     delete(article_id, callback){
         fetch(URL + "/article/delete", {
-            method: "post",
+            method: "POST",
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -124,7 +125,7 @@ const Cloud = {
             console.log(err);
             alert("评论失败, 兄台看看网线插上了没?");
         })
-    },
+    }
 
 };
 

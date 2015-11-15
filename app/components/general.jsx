@@ -1,28 +1,36 @@
 import React from "react";
-import cookie from "cookie-cutter";
+import cookie from "react-cookie";
+import Loader from "./loader.jsx";
 import "../style/general.less";
 
 const General = React.createClass({
     handleInto(article_id){
-        cookie.set("article_id", article_id);
-        location.href = "../postpage";
+        cookie.save("article_id", article_id);
+        this.props.history.pushState(null, "/postpage", {article_id: article_id});
     },
     render(){
-        return(
-            <div className="general">
+        let component;
+        if(this.props.loadCompleted){
+            component = (
                 <ul className="articles">
                     {this.props.articles.map((item)=>{
-                       return(
-                           <li key={item.article_id}>
+                        return(
+                            <li key={item.article_id}>
                                 <article className="article">
                                     <h3 className="title" onClick={()=>{this.handleInto(item.article_id)}}>{item.title}</h3>
                                     <h4 className="desc">{item.desc}</h4>
                                     <p className="date">Post on {item.date}</p>
                                 </article>
-                           </li>
-                       );
+                            </li>
+                        );
                     })}
-                </ul>
+                </ul>);
+        }else{
+            component = <Loader />
+        }
+        return(
+            <div className="general">
+                {component}
             </div>
         );
     }

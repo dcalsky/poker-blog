@@ -1,8 +1,9 @@
 import React from "react";
-import cookie from "cookie-cutter";
+import cookie from "react-cookie";
 import Login from "./login.jsx";
 import "../style/left-nav.less";
 import avatar from "../images/avatar.jpg";
+import config from "../config.json";
 
 const LeftNav = React.createClass({
     getInitialState(){
@@ -13,7 +14,7 @@ const LeftNav = React.createClass({
     },
     componentWillMount(){
         this.setState({
-            username: cookie.get("username")
+            username: cookie.load("username")
         });
     },
     login(){
@@ -24,16 +25,23 @@ const LeftNav = React.createClass({
         }
     },
     logout(){
-        cookie.set("username", "");
+        cookie.remove("username");
         this.setState({
             username: null
         });
+        if(this.props.getUsername){
+            this.props.getUsername(null);
+        }
+
     },
     closeLoginBox(username){
         this.setState({
             loginBoxShow: false,
             username: username
         });
+        if(this.props.getUsername){
+            this.props.getUsername(username);
+        }
     },
     render(){
         return(
@@ -42,15 +50,15 @@ const LeftNav = React.createClass({
                     <div className="img">
                         <img className="avatar" src={avatar} alt="" />
                     </div>
-                    <div className="title">Poker Blog</div>
-                    <p className="desc">---."左左不是Mr.Right~!</p>
+                    <div className="title">{config.site_name}</div>
+                    <p className="desc">{config.desc}</p>
                     <ul>
                         <li className="hyperlink" onClick={this.login}>{this.state.username ?  "Your're " + this.state.username : "Login"}</li>
-                        <li className="hyperlink" onClick={()=>{location.href = "../homepage"}} >Home Page</li>
+                        <li className="hyperlink" onClick={()=>{this.props.history.pushState(null, "/homepage", null)}} >Home Page</li>
                         <li className="hyperlink">About Me</li>
                     </ul>
                     <div className="copyright">
-                        <p >© Copyright 2015 周左左 All rights reserved</p>
+                        <p >{config.copyright}</p>
                     </div>
                 </div>
                 {

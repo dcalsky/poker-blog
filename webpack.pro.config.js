@@ -1,17 +1,21 @@
 var webpack = require("webpack");
+var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require("path");
 var config = {
-    entry: ['webpack/hot/dev-server', './app/index.js'],
+    entry: {
+        app: './app/index.js',
+        vendors: ["react", "node-fetch", "marked", "react-router"]
+    },
     output: {
-        path: path.resolve(__dirname, './bundle'),
-        filename: 'bundle.js'
+        path: "./bundle",
+        filename: 'bundle.[hash].js'
     },
     module: {
         loaders: [{
             test: /\.jsx?$/, // 用正则来匹配文件路径，这段意思是匹配 js 或者 jsx
             include: path.join(__dirname, 'app'),
-            loaders: ["react-hot", "babel"] // 加载模块 "babel" 是 "babel-loader" 的缩写
+            loaders: ["babel"] // 加载模块 "babel" 是 "babel-loader" 的缩写
         },{
             test: /\.css$/,
             loader: "css!style"
@@ -28,13 +32,15 @@ var config = {
 
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
         new HtmlWebpackPlugin({
             title: 'Poker Blog',
             template: './app/www/index.html',
             inject: 'body'
-        })
-
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ]
+
 
 };
 

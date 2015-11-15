@@ -1,8 +1,8 @@
 import React from "react";
-import LeftNav from "../../components/left-nav.jsx";
-import General from "../../components/general.jsx";
-import Cloud from "../../cloud/index.js";
-import "../../style/main.less";
+import LeftNav from "../components/left-nav.jsx";
+import General from "../components/general.jsx";
+import Cloud from "../cloud/index.js";
+import "../style/main.less";
 
 const Home  = React.createClass({
     getInitialState(){
@@ -43,16 +43,8 @@ const Home  = React.createClass({
     render(){
         return(
             <div className="homepage">
-                <LeftNav />
-                {
-                    this.state.loadCompleted?
-                        <General articles={this.state.articles} />
-                        :
-                        <div className="loader">
-                            Loading ...
-                        </div>
-                }
-
+                <LeftNav history={this.props.history}/>
+                <General articles={this.state.articles} loadCompleted={this.state.loadCompleted} history={this.props.history}/>
             </div>
         );
     }

@@ -1,6 +1,6 @@
 import React from "react";
 import Cloud from "../cloud/index.js";
-import cookie from "cookie-cutter";
+import cookie from "react-cookie";
 import "../style/login.less";
 
 const Login = React.createClass({
@@ -21,7 +21,7 @@ const Login = React.createClass({
                     console.log(res);
                     if(res.status == "ok"){
                         console.log("login");
-                        cookie.set("username", res.username);
+                        cookie.save("username", res.username);
                         this.props.closeLoginBox(res.username);
                     }
                 });
@@ -30,7 +30,7 @@ const Login = React.createClass({
                     console.log(res);
                     if(res.status == "ok"){
                         console.log("register");
-                        cookie.set("username", res.username);
+                        cookie.save("username", res.username);
                         this.props.closeLoginBox(res.username);
                     }
                 });
@@ -49,14 +49,14 @@ const Login = React.createClass({
     validate(val, name){
         switch(name){
             case "username":
-                if(/\w{4,12}/.test(val)){
+                if(!/[^a-zA-Z0-9\u4E00-\u9FA5]/.test(val) && /^[a-zA-Z0-9\u4E00-\u9FA5]{3,10}$/.test(val)){
                     return true;
                 }else{
                     return false;
                 }
                 break;
             case "password":
-                if(/\w{6,16}/.test(val)){
+                if(/\w{6,16}/.test(val) && !/[^\w]+/.test(val)){
                     return true;
                 }else{
                     return false;

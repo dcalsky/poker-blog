@@ -2,7 +2,6 @@
   .post-article {
     position: relative;
     margin-left: 330px;
-    height: 100%;
     .article {
       text-align: center;
       padding: 100px 50px 0 50px;
@@ -20,6 +19,7 @@
       .comment-box {
         position: relative;
         margin: 80px 0;
+        min-height: 100px;
         .add-box {
           margin: 30px 0;
           position: relative;
@@ -43,6 +43,7 @@
           list-style: none;
           padding: 10px;
           .comment {
+            position: relative;
             margin: 20px 0;
             padding: 20px;
             min-height: 50px;
@@ -64,4 +65,35 @@
         }
       }
     }
+  }
+  .delete {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    outline: none;
+    cursor: pointer;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+
+  .delete-article {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    outline: none;
+    cursor: pointer;
+    background: #fff;
+    transform: rotate(45deg);
   }
