@@ -52,7 +52,7 @@ const Post  = React.createClass({
         });
         //filter
         let content = this.state.comment.replace(/<\/?[^>]*>/g,'');
-        let username = cookie.load("username");
+        let username = cookie.load("username").toString();
         let article_id = cookie.load("article_id");
         let new_comments = this.state.comments;
         content = content.replace(/[ | ]*\n/g,'\n');
@@ -97,6 +97,7 @@ const Post  = React.createClass({
                 content: this.state.content,
                 title: this.state.title,
                 desc: this.state.desc,
+                new: false
             }, "/publish")
     },
     render(){
@@ -119,7 +120,14 @@ const Post  = React.createClass({
                         <div className="date">
                             {this.state.date}
                         </div>
-                        <b style={{"color": "#333", "cursor": "pointer"}} onClick={this.editArticle}>编辑</b>
+                        {
+                            cookie.load("username") == "1453937"?
+                                <b style={{"color": "#333", "cursor": "pointer"}} onClick={this.editArticle}>编辑</b>
+                                :
+                                null
+
+                        }
+
                         <div className="content">
                             <div className="markdown" dangerouslySetInnerHTML={{ __html: marked(this.state.content) }}></div>
                         </div>

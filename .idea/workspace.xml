@@ -2,41 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da3dd76-f341-41b2-86f1-fb0f126baa48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/www/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/loader.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/style/loader.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pages/postpage.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pages/publish.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/style/publish.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.pro.config.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/Dcalsky.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/pages/homepage/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/pages/postpage/postpage.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/pages/publish/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/pages/publish/publish.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bundle/homepage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bundle/homepage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bundle/postpage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bundle/postpage.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/pages/homepage/homepage.jsx" afterPath="$PROJECT_DIR$/app/pages/homepage.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/pages/postpage/index.js" afterPath="$PROJECT_DIR$/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config.json" afterPath="$PROJECT_DIR$/app/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/general.jsx" afterPath="$PROJECT_DIR$/app/components/general.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/style/general.less" afterPath="$PROJECT_DIR$/app/style/general.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundle/index.html" afterPath="$PROJECT_DIR$/bundle/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cloud/index.js" afterPath="$PROJECT_DIR$/app/cloud/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/left-nav.jsx" afterPath="$PROJECT_DIR$/app/components/left-nav.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login.jsx" afterPath="$PROJECT_DIR$/app/components/login.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/style/main.less" afterPath="$PROJECT_DIR$/app/style/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/style/postpage.less" afterPath="$PROJECT_DIR$/app/style/postpage.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/postpage.jsx" afterPath="$PROJECT_DIR$/app/pages/postpage.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/publish.jsx" afterPath="$PROJECT_DIR$/app/pages/publish.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/style/publish.less" afterPath="$PROJECT_DIR$/app/style/publish.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundle/vendors.js" afterPath="$PROJECT_DIR$/bundle/vendors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="poker.iws" />
@@ -73,7 +44,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1447480639000" expanded="true" signature="202:620" placeholder="&lt;xml/&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,7 +56,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="32" column="30" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="30" />
-              <folding />
+              <folding>
+                <marker date="1447585155000" expanded="true" signature="2304:3702" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585155000" expanded="true" signature="2345:3683" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585155000" expanded="true" signature="2596:2713" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585155000" expanded="true" signature="2734:2949" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585155000" expanded="true" signature="2970:3189" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585155000" expanded="true" signature="3210:3464" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585155000" expanded="true" signature="3485:3659" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585155000" expanded="true" signature="3545:3632" placeholder="&lt;xml/&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,7 +75,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="43" />
-              <folding />
+              <folding>
+                <marker date="1447580790000" expanded="true" signature="1255:1484" placeholder="&lt;xml/&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/app/pages/postpage.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+              <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -112,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/app/components/left-nav.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -121,8 +105,28 @@
       <file leaf-file-name="publish.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/pages/publish.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1408776">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.4524362">
+              <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.375">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publish.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/style/publish.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.8235292">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -133,27 +137,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/style/login.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding />
+              <folding>
+                <marker date="1447585110000" expanded="true" signature="448:1106" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585110000" expanded="true" signature="589:1033" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585110000" expanded="true" signature="648:999" placeholder="&lt;xml/&gt;" />
+                <marker date="1447585110000" expanded="true" signature="1197:1269" placeholder="&lt;xml/&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,8 +166,10 @@
         <option value="$PROJECT_DIR$/app/style/main.less" />
         <option value="$PROJECT_DIR$/app/components/general.jsx" />
         <option value="$PROJECT_DIR$/app/components/login.jsx" />
+        <option value="$PROJECT_DIR$/app/style/publish.less" />
         <option value="$PROJECT_DIR$/app/components/left-nav.jsx" />
         <option value="$PROJECT_DIR$/app/pages/postpage.jsx" />
+        <option value="$PROJECT_DIR$/app/config.json" />
         <option value="$PROJECT_DIR$/app/pages/publish.jsx" />
       </list>
     </option>
@@ -391,13 +382,21 @@
       <option name="number" value="Default" />
       <updated>1447570661162</updated>
     </task>
+    <task id="LOCAL-00001" summary="complete">
+      <created>1447597824181</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1447597824181</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.49721116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -405,8 +404,8 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32896653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.50278884" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -427,6 +426,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -444,7 +447,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1447480639000" expanded="true" signature="202:620" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -452,7 +457,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="30" />
-          <folding />
+          <folding>
+            <marker date="1447585155000" expanded="true" signature="2304:3702" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="2345:3683" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="2596:2713" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="2734:2949" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="2970:3189" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="3210:3464" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="3485:3659" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="3545:3632" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -460,7 +474,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="43" />
-          <folding />
+          <folding>
+            <marker date="1447580790000" expanded="true" signature="1255:1484" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -492,7 +508,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
+          <folding>
+            <marker date="1447585110000" expanded="true" signature="448:1106" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585110000" expanded="true" signature="589:1033" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585110000" expanded="true" signature="648:999" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585110000" expanded="true" signature="1197:1269" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -512,17 +533,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -538,6 +553,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.88235295">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -545,6 +561,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.88235295">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -552,6 +569,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.235294">
           <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -579,19 +597,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/general.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/loader.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1447480639000" expanded="true" signature="202:620" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -599,15 +611,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/left-nav.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1447585155000" expanded="true" signature="2304:3702" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="2345:3683" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="2596:2713" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="2734:2949" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="2970:3189" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="3210:3464" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="3485:3659" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585155000" expanded="true" signature="3545:3632" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -615,22 +628,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="43" />
+          <folding>
+            <marker date="1447580790000" expanded="true" signature="1255:1484" placeholder="&lt;xml/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/style/publish.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8235292">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/left-nav.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/general.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <marker date="1447585110000" expanded="true" signature="448:1106" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585110000" expanded="true" signature="589:1033" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585110000" expanded="true" signature="648:999" placeholder="&lt;xml/&gt;" />
+            <marker date="1447585110000" expanded="true" signature="1197:1269" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/postpage.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/publish.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1408776">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.4524362">
+          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
           <folding />
         </state>
       </provider>

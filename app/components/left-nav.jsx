@@ -43,6 +43,9 @@ const LeftNav = React.createClass({
             this.props.getUsername(username);
         }
     },
+    addArticle(){
+        this.props.history.pushState({new: true}, "publish");
+    },
     render(){
         return(
             <div className="left-nav">
@@ -56,6 +59,12 @@ const LeftNav = React.createClass({
                         <li className="hyperlink" onClick={this.login}>{this.state.username ?  "Your're " + this.state.username : "Login"}</li>
                         <li className="hyperlink" onClick={()=>{this.props.history.pushState(null, "/homepage", null)}} >Home Page</li>
                         <li className="hyperlink">About Me</li>
+                        {
+                            this.state.username == "1453937"?
+                            <li className="hyperlink" onClick={this.addArticle}>Add article</li>
+                                :
+                                null
+                        }
                     </ul>
                     <div className="copyright">
                         <p >{config.copyright}</p>

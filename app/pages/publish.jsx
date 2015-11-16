@@ -24,8 +24,8 @@ let initText = [
 const Publish  = React.createClass({
     getInitialState(){
         return{
-            text: initText,
-            title: "",
+            text: this.props.location.state.content ? this.props.location.state.content : initText,
+            title:  "",
             desc: ""
         };
     },
@@ -58,9 +58,9 @@ const Publish  = React.createClass({
                 this.props.history.pushState(null, "/homepage", null);
             }
         });
+        //TODO edit article
     },
     render(){
-        console.log(this.props.location.state);
         let content = this.props.location.state.content;
         let desc = this.props.location.state.desc;
         let title = this.props.location.state.title;
@@ -75,7 +75,7 @@ const Publish  = React.createClass({
                         提交
                     </button>
                 </form>
-                <div className="markdown" dangerouslySetInnerHTML={{ __html: marked(content ? content : this.state.text) }}></div>
+                <div className="markdown" dangerouslySetInnerHTML={{ __html: marked(this.state.text) }}></div>
             </div>
         )
     }
