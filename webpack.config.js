@@ -34,7 +34,12 @@ var config = {
             inject: 'body'
         })
 
-    ]
+    ],
+    node: {
+        net: 'empty',
+        tls: 'empty',
+        dns : 'empty'
+    }
 
 };
 
