@@ -132,10 +132,10 @@ const Post  = React.createClass({
                             <div className="markdown" dangerouslySetInnerHTML={{ __html: marked(this.state.content) }}></div>
                         </div>
                         <div className="comment-box">
-                            <h1>Comment Box</h1>
                             {
                                 this.state.loadCompleted?
                                     <div>
+                                        <h1>Comment Box</h1>
                                         <div className="add-box">
                                             <input type="text" value={this.state.comment} onChange={this.handleInput} placeholder="Add your comment  (Use XSS if you can :) )" />
                                             <button className="add" onClick={this.handleComment} disabled={!this.state.commentCompleted}>Add</button>
