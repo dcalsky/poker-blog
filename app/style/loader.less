@@ -1,29 +1,36 @@
 .loader {
-  width: 100px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 50px -50px;
+  text-align: center;
+  background: #fff;
 }
-.loader div {
-  width: 20px;
-  height: 20px;
+
+.loader h1 {
+  margin: 50px;
+}
+.loader .d1,.d2,.d3,.d4,.d5 {
+  width: 50px;
+  height: 50px;
   background: #FFF;
   border-radius: 50%;
   position: absolute;
-
 }
+.loader .ball-box {
+  position: relative;
+  height: 60px;
+  text-align: center;
+}
+
 .d1 { animation: animate 2s linear infinite;}
 .d2 { animation: animate 2s linear infinite -.4s; }
 .d3 {animation: animate 2s linear infinite -.8s; }
 .d4 { animation: animate 2s linear infinite -1.2s; }
 .d5 { animation: animate 2s linear infinite -1.6s; }
+
+
 @-webkit-keyframes animate {
-  0% { left: 100px; top:0}
-  80% { left: 0; top:0;}
-  85% { left: 0; top: -20px; width: 20px; height: 20px;}
-  90% { width: 40px; height: 15px; }
-  95% { left: 100px; top: -20px; width: 20px; height: 20px;}
-  100% { left: 100px; top:0; }
+  0% { left: 65%; top:0}
+  70% { left: 25%; top:0;}
+  80% { left: 25%; top: -30px; width: 50px; height: 50px;}
+  85% { width: 25px; height: 25px; }
+  90% { left: 65%; top: -20px; width: 49px; height: 49px;}
+  100% { left: 65%; top:0; }
 }

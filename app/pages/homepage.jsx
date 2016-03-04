@@ -32,7 +32,6 @@ const Home  = React.createClass({
         };
     },
     componentWillMount(){
-
         Cloud.getGeneral((res)=>{
             this.setState({
                 articles: res.articles,
