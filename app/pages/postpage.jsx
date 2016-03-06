@@ -4,6 +4,7 @@ import LeftNav from "../components/left-nav.jsx";
 import Loader from "../components/loader.jsx";
 import Cloud from "../cloud/index.js";
 import marked from "marked";
+import backIcon from "../images/left.png";
 import "../style/md.less";
 import "../style/postpage.less";
 import "../style/main.less";
@@ -91,6 +92,9 @@ const Post  = React.createClass({
             }
         });
     },
+    handleBack(){
+        this.props.history.pushState(null, "/homepage", null);
+    },
     editArticle(){
         this.props.history.pushState(
             {
@@ -105,6 +109,7 @@ const Post  = React.createClass({
             <div className="postpage">
                 <LeftNav getUsername={this.getUsername} history={this.props.history}/>
                 <div className="post-article">
+                    <img className="back" src={backIcon} alt="back button" onClick={this.handleBack}/>
                     {
                         cookie.load("username") == "1453937"?
                             <img className="delete-article" onClick={this.deleteArticle} src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg" alt=""/>
