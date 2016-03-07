@@ -4,5 +4,7 @@
   "copyright": "© Copyright 2016 周左左 All rights reserved",
   "author": "Dcalsky",
   "left_nav_background": ["edc951", "#333"],
-  "back_end_host": "http://pokerblog.avosapps.com"
+  "back_end_host": "https://api.leancloud.cn/1.1",
+  "app_id": "H6GzXF6Vx8VVeW7Fw5biOKQ5",
+  "app_key": "RNnS3pKDUwsY0sbjIKYoJTSF"
 }

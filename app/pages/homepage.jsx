@@ -33,8 +33,9 @@ const Home  = React.createClass({
     },
     componentWillMount(){
         Cloud.getGeneral((res)=>{
+            console.log(res);
             this.setState({
-                articles: res.articles,
+                articles: res,
                 loadCompleted: true
             });
         })

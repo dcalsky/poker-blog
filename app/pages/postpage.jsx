@@ -30,7 +30,7 @@ const Post  = React.createClass({
             console.log(res)
             this.setState({
                 title: res.title,
-                date: res.date,
+                date: res.createAt,
                 content: res.content,
                 comments: res.comments,
                 loadCompleted: true,
