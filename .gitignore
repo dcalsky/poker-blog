@@ -8,3 +8,5 @@ app/vendor
 .tmp
 .idea
 test/scripts/
+qrsync
+qrsync.json
